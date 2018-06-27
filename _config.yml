@@ -1,9 +1,9 @@
 # Site Info
-title: jini-lee 창작과 코딩
-tagline: 'jini-lee 창작과 코딩'
-description: '개발하며 기록하고 저장하기'
+title: Edticket 기술 블로그
+tagline: 'mobility platform lab'
+description: '기술 공유 블로그'
 baseurl: ""
-url: http://jini-lee.github.io
+url: http://edticket.github.io
 
 # Site configurations
 gems:
