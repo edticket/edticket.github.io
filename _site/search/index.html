@@ -11,7 +11,7 @@
 
   <title>
     
-      Categories &middot; Edticket 기술 블로그
+      Search &middot; Edticket 기술 블로그
     
   </title>
 
@@ -175,7 +175,7 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       
 
       <span class="">
-        <a class="sidebar-nav-item " href="/search/">
+        <a class="sidebar-nav-item active" href="/search/">
           Search
         </a>
 
@@ -219,30 +219,66 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 
       <div class="container content">
         <div class="page">
-  <h1 class="page-title">Categories</h1>
-  <div class="tags-expo">
-  <div class="tags-expo-list">
-    
-    <a href="#python" class="post-tag">python</a>
-    
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    
-    <h2 id="python">python</h2>
-    <ul class="tags-expo-posts">
-      
-        <a class="post-title" href="/python/2018/06/27/test/">
-      <li>
-        테스트 블로그 쓰기
-      <small class="post-date">27 Jun 2018</small>
-      </li>
-      </a>
-      
-    </ul>
-    
-  </div>
+  <h1 class="page-title">Search</h1>
+  <div id="results">
+  <h1><!-- `key` listing for `value` --></h1>
+
+  <ul class="results">
+    <!-- results lists -->
+  </ul>
 </div>
+
+<div id="search-container-google">
+  <script>
+    (function() {
+      var cx = '015731003607597102937:cmvfrjrcoq0';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</div>
+
+<!-- Html Elements for Search -->
+<!-- <div id="search-container">
+<input type="text" id="search-input" placeholder="검색어를 입력하세요.">
+<ul id="results-container"></ul>
+</div> -->
+<!-- tag list -->
+<!-- <hr/>
+<div class="tags-expo-list">
+  
+  <a href="https://wayhome25.github.io/blog/tags/#python" class="post-tag">python</a> -->
+
+  <!-- blog/tags/#python -->
+  <!-- 
+  <a href="https://wayhome25.github.io/blog/tags/#파이썬" class="post-tag">파이썬</a> -->
+
+  <!-- blog/tags/#python -->
+  <!-- 
+</div> -->
+
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="/dest/jekyll-search.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search2.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: true,
+        exclude: ['Welcome']
+      })
+</script>
 
 </div>
 
