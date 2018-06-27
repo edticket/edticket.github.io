@@ -3,7 +3,7 @@ title: Edticket 기술 블로그
 tagline: 'mobility platform lab'
 description: '기술 공유 블로그'
 baseurl: ""
-url: http://edticket.github.io
+url: https://edticket.github.io
 
 # Site configurations
 gems:
