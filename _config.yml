@@ -1,1 +1,65 @@
-theme: jekyll-theme-cayman
+# Site Info
+title: jini-lee 창작과 코딩
+tagline: 'jini-lee 창작과 코딩'
+description: '개발하며 기록하고 저장하기'
+baseurl: ""
+url: http://jini-lee.github.io
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: LEE JINHEE
+  description: zaddy.jini
+  contact:
+    github:    https://github.com/jini-lee
+    facebook:  https://www.facebook.com/jinhee.lee.351
+    email:     mailto:zaddy.jini@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/blog/'
+  Categories:
+    - '/'
+    - { python: '/blog/categories/#python' }
+    - { javascript: '/blog/categories/#javascript' }
+    - { swift: '/blog/categories/#swift' }
+    - { django: '/blog/categories/#django' }
+    - { postgres: '/blog/categories/#postgres' }
+    - { git: '/blog/categories/#git' }
+    - { side_project: '/blog/categories/#side_project' }
+    - { etc: '/blog/categories/#etc' }
+    # - { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+  Search:
+    - '/search/'
+
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+# Puglins
+mathjax: true # whether support mathjax
+#google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'jini-github-io' # leave blank if you don't want disqus
+
+# Use the following plug-ins
+gems:
+  - jekyll-paginate
