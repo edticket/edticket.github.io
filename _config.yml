@@ -14,7 +14,7 @@ kramdown:
 excerpt_separator: "<!-- more -->"
 sass:
   style: compressed
-  sass_dir: _scss    
+  sass_dir: _scss
 paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
@@ -23,12 +23,11 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: LEE JINHEE
-  description: zaddy.jini
+  name: edticket-tech
+  description: mobility platform lab
   contact:
-    github:    https://github.com/jini-lee
-    facebook:  https://www.facebook.com/jinhee.lee.351
-    email:     mailto:zaddy.jini@gmail.com
+    github:    https://github.com/edticket
+    email:     mailto:developer@edticket.com
 
 # Navigation (2nd level links supported)
 nav:
@@ -38,11 +37,8 @@ nav:
     - '/'
     - { python: '/blog/categories/#python' }
     - { javascript: '/blog/categories/#javascript' }
-    - { swift: '/blog/categories/#swift' }
     - { django: '/blog/categories/#django' }
     - { postgres: '/blog/categories/#postgres' }
-    - { git: '/blog/categories/#git' }
-    - { side_project: '/blog/categories/#side_project' }
     - { etc: '/blog/categories/#etc' }
     # - { Tags: '/blog/tags/' }
   About:
@@ -58,7 +54,7 @@ category_page: '/blog/categories/'
 # Puglins
 mathjax: true # whether support mathjax
 #google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'jini-github-io' # leave blank if you don't want disqus
+disqus_short_name: 'edticket-github-io' # leave blank if you don't want disqus
 
 # Use the following plug-ins
 gems:
